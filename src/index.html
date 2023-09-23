@@ -12,30 +12,30 @@
     <nav class="flex flex-row items-center justify-between px-[5%] py-[3%]">
         <img src="./assets/logo.svg" alt="Logo" width="100px" class="object-contain w-[70px] lg:w-[100px]">
         <ul class="hidden uppercase lg:flex gap-x-10 font-inter">
-            <li class="cursor-pointer">
+            <a href="#home" class="cursor-pointer">
                 <span class="peer">Home</span>
                 <div class="peer-hover:w-[20px] w-[0px] h-[1.5px] bg-primary transition-all ease-in-out duration-500">
                 </div>
-            </li>
-            <li class="cursor-pointer">
+            </a>
+            <a href="#books" class="cursor-pointer">
                 <span class="peer">Books</span>
                 <div class="peer-hover:w-[20px] w-[0px] h-[1.5px] bg-primary transition-all ease-in-out duration-500">
                 </div>
-            </li>
-            <li class="cursor-pointer">
+            </a>
+            <a href="#aboutUs" class="cursor-pointer">
                 <span class="peer">About Us</span>
                 <div class="peer-hover:w-[20px] w-[0px] h-[1.5px] bg-primary transition-all ease-in-out duration-500">
                 </div>
-            </li>
-            <li class="cursor-pointer">
+            </a>
+            <a href="#contactUs" class="cursor-pointer">
                 <span class="peer">Contact Us</span>
                 <div class="peer-hover:w-[20px] w-[0px] h-[1.5px] bg-primary transition-all ease-in-out duration-500">
                 </div>
-            </li>
+            </a>
         </ul>
         <img class="block lg:hidden w-[23px]" src="./assets/menu.svg" alt="Menu">
     </nav>
-    <section class="flex w-full px-[5%] lg:px-[10%] justify-between items-end">
+    <section id="home" class="flex w-full px-[5%] lg:px-[10%] justify-between items-end">
         <div class="flex flex-col max-w-3xl">
             <h1 class="text-5xl leading-[48px] mt-3 lg:mt-0 lg:text-6xl font-black lg:leading-[76px] font-inter">
                 Discover The Must-Reads Of the Year.</h1>
@@ -50,7 +50,7 @@
     </section>
     <section class="h-[116px] bg-secondary w-full mt-20">
     </section>
-    <section class="mt-5 px-[2%] lg:px-[5%] mb-16 lg:mb-32">
+    <section id="books" class="mt-5 px-[2%] lg:px-[5%] mb-16 lg:mb-32">
         <h2 class="text-3xl font-black text-center lg:text-5xl font-inter">Books.</h2>
         <h3 class="mt-2 text-sm lg:text-xl tracking-[12.4px] text-center uppercase">Overview</h3>
         <div class="grid grid-cols-2 gap-y-5 gap-x-2 lg:grid-cols-4 lg:gap-10 mt-9">
@@ -304,7 +304,7 @@
             </div>
         </div>
     </section>
-    <section class="mt-5 px-[20px] lg:px-[100px] py-[50px] bg-primary mx-2 lg:mx-0">
+    <section id="aboutUs" class="mt-5 px-[20px] lg:px-[100px] py-[50px] bg-primary mx-2 lg:mx-0">
         <h2 class="mb-12 text-3xl font-black text-center text-white lg:mb-20 lg:text-5xl font-inter">About Us.</h2>
         <p class="text-[#FCFCFC] text-sm lg:text-lg leading-10 lg:leading-[58px] font-light lg:font-normal">
             We&apos;re the people behind MailerLite, a team of creators dedicated to building outstanding online
@@ -346,7 +346,7 @@
             </div>
         </div>
     </section>
-    <section class="w-full mt-16 bg-gray-100">
+    <section id="contactUs" class="w-full mt-16 bg-gray-100">
         <div class="max-w-5xl py-6 pb-20 mx-auto">
             <h2 class="mb-8 text-3xl font-black text-center lg:mb-20 lg:text-5xl">Contact Us.</h2>
             <p class="text-sm text-center lg:text-lg">
@@ -395,10 +395,10 @@
     </section>
     <section class="w-full py-16 mx-auto bg-gray-200">
         <div class="flex items-center justify-center gap-x-8 uppercase text-[8px] font-semibold mb-5">
-            <p>Home</p>
-            <p>Books</p>
-            <p>About Us</p>
-            <p>Contact Us</p>
+            <a href="#home">Home</a>
+            <a href="#books">Books</a>
+            <a href="#aboutUs">About Us</a>
+            <a href="#contactUs">Contact Us</a>
         </div>
         <div class="flex justify-center item-center text-[10px] font-light space-x-1">
             <span>© 2020 - 2023 MailerSend.</span> <span class="underline">Terms of Service</span> <span
