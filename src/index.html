@@ -12,10 +12,26 @@
     <nav class="flex flex-row items-center justify-between px-[5%] py-[3%]">
         <img src="./assets/logo.svg" alt="Logo" width="100px" class="object-contain w-[70px] lg:w-[100px]">
         <ul class="hidden uppercase lg:flex gap-x-10 font-inter">
-            <li>Home</li>
-            <li>Books</li>
-            <li>About Us</li>
-            <li>Contact Us</li>
+            <li class="cursor-pointer">
+                <span class="peer">Home</span>
+                <div class="peer-hover:w-[20px] w-[0px] h-[1.5px] bg-primary transition-all ease-in-out duration-500">
+                </div>
+            </li>
+            <li class="cursor-pointer">
+                <span class="peer">Books</span>
+                <div class="peer-hover:w-[20px] w-[0px] h-[1.5px] bg-primary transition-all ease-in-out duration-500">
+                </div>
+            </li>
+            <li class="cursor-pointer">
+                <span class="peer">About Us</span>
+                <div class="peer-hover:w-[20px] w-[0px] h-[1.5px] bg-primary transition-all ease-in-out duration-500">
+                </div>
+            </li>
+            <li class="cursor-pointer">
+                <span class="peer">Contact Us</span>
+                <div class="peer-hover:w-[20px] w-[0px] h-[1.5px] bg-primary transition-all ease-in-out duration-500">
+                </div>
+            </li>
         </ul>
         <img class="block lg:hidden w-[23px]" src="./assets/menu.svg" alt="Menu">
     </nav>
@@ -39,220 +55,252 @@
         <h3 class="mt-2 text-sm lg:text-xl tracking-[12.4px] text-center uppercase">Overview</h3>
         <div class="grid grid-cols-2 gap-y-5 gap-x-2 lg:grid-cols-4 lg:gap-10 mt-9">
             <!-- Book Item -->
-            <div class="flex flex-col w-full">
+            <div class="flex flex-col w-full group">
                 <div class="w-full bg-gray-200">
-                    <img class="object-contain w-full" src="./assets/book_cover.png" alt="Book Cover">
+                    <img class="object-contain w-full group-hover:hidden" src="./assets/book_cover.png"
+                        alt="Book Cover">
+                    <img class="hidden object-contain w-full group-hover:block" src="./assets/book_cover_hover.png"
+                        alt="Book Cover">
                 </div>
-                <p class="mt-5 text-sm font-medium uppercase lg:text-base font-inter">
+                <p class="mt-5 text-sm font-medium uppercase lg:text-base font-inter group-hover:text-primary">
                     Designing the Future: A Guide for Innovative Designers
                 </p>
                 <p class="mt-5 text-xs uppercase font-inter">
                     Emily Johnson
                 </p>
-                <p class="mt-5 text-xs lg:text-sm font-inter">
+                <p class="mt-5 text-xs lg:text-sm font-inter group-hover:text-gray-400">
                     Understanding the psychology of design to harnessing the power of emerging technologies like
                     artificial intelligence and virtual reality
                 </p>
                 <button
-                    class="flex items-center justify-center py-4 mt-8 text-base font-bold border border-black rounded-xl">
+                    class="flex items-center justify-center py-4 mt-8 text-base font-bold border border-black rounded-xl hover:border-none hover:bg-primary hover:text-white">
                     BUY NOW
                 </button>
             </div>
             <!-- End Book Item -->
             <!-- Book Item -->
-            <div class="flex flex-col w-full">
+            <div class="flex flex-col w-full group">
                 <div class="w-full bg-gray-200">
-                    <img class="object-contain w-full" src="./assets/book_cover.png" alt="Book Cover">
+                    <img class="object-contain w-full group-hover:hidden" src="./assets/book_cover.png"
+                        alt="Book Cover">
+                    <img class="hidden object-contain w-full group-hover:block" src="./assets/book_cover_hover.png"
+                        alt="Book Cover">
                 </div>
-                <p class="mt-5 text-sm font-medium uppercase lg:text-base font-inter">
+                <p class="mt-5 text-sm font-medium uppercase lg:text-base font-inter group-hover:text-primary">
                     Designing the Future: A Guide for Innovative Designers
                 </p>
                 <p class="mt-5 text-xs uppercase font-inter">
                     Emily Johnson
                 </p>
-                <p class="mt-5 text-xs lg:text-sm font-inter">
+                <p class="mt-5 text-xs lg:text-sm font-inter group-hover:text-gray-400">
                     Understanding the psychology of design to harnessing the power of emerging technologies like
                     artificial intelligence and virtual reality
                 </p>
                 <button
-                    class="flex items-center justify-center py-4 mt-8 text-base font-bold border border-black rounded-xl">
+                    class="flex items-center justify-center py-4 mt-8 text-base font-bold border border-black rounded-xl hover:border-none hover:bg-primary hover:text-white">
                     BUY NOW
                 </button>
             </div>
             <!-- End Book Item -->
             <!-- Book Item -->
-            <div class="flex flex-col w-full">
+            <div class="flex flex-col w-full group">
                 <div class="w-full bg-gray-200">
-                    <img class="object-contain w-full" src="./assets/book_cover.png" alt="Book Cover">
+                    <img class="object-contain w-full group-hover:hidden" src="./assets/book_cover.png"
+                        alt="Book Cover">
+                    <img class="hidden object-contain w-full group-hover:block" src="./assets/book_cover_hover.png"
+                        alt="Book Cover">
                 </div>
-                <p class="mt-5 text-sm font-medium uppercase lg:text-base font-inter">
+                <p class="mt-5 text-sm font-medium uppercase lg:text-base font-inter group-hover:text-primary">
                     Designing the Future: A Guide for Innovative Designers
                 </p>
                 <p class="mt-5 text-xs uppercase font-inter">
                     Emily Johnson
                 </p>
-                <p class="mt-5 text-xs lg:text-sm font-inter">
+                <p class="mt-5 text-xs lg:text-sm font-inter group-hover:text-gray-400">
                     Understanding the psychology of design to harnessing the power of emerging technologies like
                     artificial intelligence and virtual reality
                 </p>
                 <button
-                    class="flex items-center justify-center py-4 mt-8 text-base font-bold border border-black rounded-xl">
+                    class="flex items-center justify-center py-4 mt-8 text-base font-bold border border-black rounded-xl hover:border-none hover:bg-primary hover:text-white">
                     BUY NOW
                 </button>
             </div>
             <!-- End Book Item -->
             <!-- Book Item -->
-            <div class="flex flex-col w-full">
+            <div class="flex flex-col w-full group">
                 <div class="w-full bg-gray-200">
-                    <img class="object-contain w-full" src="./assets/book_cover.png" alt="Book Cover">
+                    <img class="object-contain w-full group-hover:hidden" src="./assets/book_cover.png"
+                        alt="Book Cover">
+                    <img class="hidden object-contain w-full group-hover:block" src="./assets/book_cover_hover.png"
+                        alt="Book Cover">
                 </div>
-                <p class="mt-5 text-sm font-medium uppercase lg:text-base font-inter">
+                <p class="mt-5 text-sm font-medium uppercase lg:text-base font-inter group-hover:text-primary">
                     Designing the Future: A Guide for Innovative Designers
                 </p>
                 <p class="mt-5 text-xs uppercase font-inter">
                     Emily Johnson
                 </p>
-                <p class="mt-5 text-xs lg:text-sm font-inter">
+                <p class="mt-5 text-xs lg:text-sm font-inter group-hover:text-gray-400">
                     Understanding the psychology of design to harnessing the power of emerging technologies like
                     artificial intelligence and virtual reality
                 </p>
                 <button
-                    class="flex items-center justify-center py-4 mt-8 text-base font-bold border border-black rounded-xl">
+                    class="flex items-center justify-center py-4 mt-8 text-base font-bold border border-black rounded-xl hover:border-none hover:bg-primary hover:text-white">
                     BUY NOW
                 </button>
             </div>
             <!-- End Book Item -->
             <!-- Book Item -->
-            <div class="flex flex-col w-full">
+            <div class="flex flex-col w-full group">
                 <div class="w-full bg-gray-200">
-                    <img class="object-contain w-full" src="./assets/book_cover.png" alt="Book Cover">
+                    <img class="object-contain w-full group-hover:hidden" src="./assets/book_cover.png"
+                        alt="Book Cover">
+                    <img class="hidden object-contain w-full group-hover:block" src="./assets/book_cover_hover.png"
+                        alt="Book Cover">
                 </div>
-                <p class="mt-5 text-sm font-medium uppercase lg:text-base font-inter">
+                <p class="mt-5 text-sm font-medium uppercase lg:text-base font-inter group-hover:text-primary">
                     Designing the Future: A Guide for Innovative Designers
                 </p>
                 <p class="mt-5 text-xs uppercase font-inter">
                     Emily Johnson
                 </p>
-                <p class="mt-5 text-xs lg:text-sm font-inter">
+                <p class="mt-5 text-xs lg:text-sm font-inter group-hover:text-gray-400">
                     Understanding the psychology of design to harnessing the power of emerging technologies like
                     artificial intelligence and virtual reality
                 </p>
                 <button
-                    class="flex items-center justify-center py-4 mt-8 text-base font-bold border border-black rounded-xl">
+                    class="flex items-center justify-center py-4 mt-8 text-base font-bold border border-black rounded-xl hover:border-none hover:bg-primary hover:text-white">
                     BUY NOW
                 </button>
             </div>
             <!-- End Book Item -->
             <!-- Book Item -->
-            <div class="flex flex-col w-full">
+            <div class="flex flex-col w-full group">
                 <div class="w-full bg-gray-200">
-                    <img class="object-contain w-full" src="./assets/book_cover.png" alt="Book Cover">
+                    <img class="object-contain w-full group-hover:hidden" src="./assets/book_cover.png"
+                        alt="Book Cover">
+                    <img class="hidden object-contain w-full group-hover:block" src="./assets/book_cover_hover.png"
+                        alt="Book Cover">
                 </div>
-                <p class="mt-5 text-sm font-medium uppercase lg:text-base font-inter">
+                <p class="mt-5 text-sm font-medium uppercase lg:text-base font-inter group-hover:text-primary">
                     Designing the Future: A Guide for Innovative Designers
                 </p>
                 <p class="mt-5 text-xs uppercase font-inter">
                     Emily Johnson
                 </p>
-                <p class="mt-5 text-xs lg:text-sm font-inter">
+                <p class="mt-5 text-xs lg:text-sm font-inter group-hover:text-gray-400">
                     Understanding the psychology of design to harnessing the power of emerging technologies like
                     artificial intelligence and virtual reality
                 </p>
                 <button
-                    class="flex items-center justify-center py-4 mt-8 text-base font-bold border border-black rounded-xl">
+                    class="flex items-center justify-center py-4 mt-8 text-base font-bold border border-black rounded-xl hover:border-none hover:bg-primary hover:text-white">
                     BUY NOW
                 </button>
             </div>
             <!-- End Book Item -->
             <!-- Book Item -->
-            <div class="flex flex-col w-full">
+            <div class="flex flex-col w-full group">
                 <div class="w-full bg-gray-200">
-                    <img class="object-contain w-full" src="./assets/book_cover.png" alt="Book Cover">
+                    <img class="object-contain w-full group-hover:hidden" src="./assets/book_cover.png"
+                        alt="Book Cover">
+                    <img class="hidden object-contain w-full group-hover:block" src="./assets/book_cover_hover.png"
+                        alt="Book Cover">
                 </div>
-                <p class="mt-5 text-sm font-medium uppercase lg:text-base font-inter">
+                <p class="mt-5 text-sm font-medium uppercase lg:text-base font-inter group-hover:text-primary">
                     Designing the Future: A Guide for Innovative Designers
                 </p>
                 <p class="mt-5 text-xs uppercase font-inter">
                     Emily Johnson
                 </p>
-                <p class="mt-5 text-xs lg:text-sm font-inter">
+                <p class="mt-5 text-xs lg:text-sm font-inter group-hover:text-gray-400">
                     Understanding the psychology of design to harnessing the power of emerging technologies like
                     artificial intelligence and virtual reality
                 </p>
                 <button
-                    class="flex items-center justify-center py-4 mt-8 text-base font-bold border border-black rounded-xl">
+                    class="flex items-center justify-center py-4 mt-8 text-base font-bold border border-black rounded-xl hover:border-none hover:bg-primary hover:text-white">
                     BUY NOW
                 </button>
             </div>
             <!-- End Book Item -->
             <!-- Book Item -->
-            <div class="flex flex-col w-full">
+            <div class="flex flex-col w-full group">
                 <div class="w-full bg-gray-200">
-                    <img class="object-contain w-full" src="./assets/book_cover.png" alt="Book Cover">
+                    <img class="object-contain w-full group-hover:hidden" src="./assets/book_cover.png"
+                        alt="Book Cover">
+                    <img class="hidden object-contain w-full group-hover:block" src="./assets/book_cover_hover.png"
+                        alt="Book Cover">
                 </div>
-                <p class="mt-5 text-sm font-medium uppercase lg:text-base font-inter">
+                <p class="mt-5 text-sm font-medium uppercase lg:text-base font-inter group-hover:text-primary">
                     Designing the Future: A Guide for Innovative Designers
                 </p>
                 <p class="mt-5 text-xs uppercase font-inter">
                     Emily Johnson
                 </p>
-                <p class="mt-5 text-xs lg:text-sm font-inter">
+                <p class="mt-5 text-xs lg:text-sm font-inter group-hover:text-gray-400">
                     Understanding the psychology of design to harnessing the power of emerging technologies like
                     artificial intelligence and virtual reality
                 </p>
                 <button
-                    class="flex items-center justify-center py-4 mt-8 text-base font-bold border border-black rounded-xl">
+                    class="flex items-center justify-center py-4 mt-8 text-base font-bold border border-black rounded-xl hover:border-none hover:bg-primary hover:text-white">
                     BUY NOW
                 </button>
             </div>
             <!-- End Book Item -->
             <!-- Book Item -->
-            <div class="flex flex-col w-full">
+            <div class="flex flex-col w-full group">
                 <div class="w-full bg-gray-200">
-                    <img class="object-contain w-full" src="./assets/book_cover.png" alt="Book Cover">
+                    <img class="object-contain w-full group-hover:hidden" src="./assets/book_cover.png"
+                        alt="Book Cover">
+                    <img class="hidden object-contain w-full group-hover:block" src="./assets/book_cover_hover.png"
+                        alt="Book Cover">
                 </div>
-                <p class="mt-5 text-sm font-medium uppercase lg:text-base font-inter">
+                <p class="mt-5 text-sm font-medium uppercase lg:text-base font-inter group-hover:text-primary">
                     Designing the Future: A Guide for Innovative Designers
                 </p>
                 <p class="mt-5 text-xs uppercase font-inter">
                     Emily Johnson
                 </p>
-                <p class="mt-5 text-xs lg:text-sm font-inter">
+                <p class="mt-5 text-xs lg:text-sm font-inter group-hover:text-gray-400">
                     Understanding the psychology of design to harnessing the power of emerging technologies like
                     artificial intelligence and virtual reality
                 </p>
                 <button
-                    class="flex items-center justify-center py-4 mt-8 text-base font-bold border border-black rounded-xl">
+                    class="flex items-center justify-center py-4 mt-8 text-base font-bold border border-black rounded-xl hover:border-none hover:bg-primary hover:text-white">
                     BUY NOW
                 </button>
             </div>
             <!-- End Book Item -->
             <!-- Book Item -->
-            <div class="flex flex-col w-full">
+            <div class="flex flex-col w-full group">
                 <div class="w-full bg-gray-200">
-                    <img class="object-contain w-full" src="./assets/book_cover.png" alt="Book Cover">
+                    <img class="object-contain w-full group-hover:hidden" src="./assets/book_cover.png"
+                        alt="Book Cover">
+                    <img class="hidden object-contain w-full group-hover:block" src="./assets/book_cover_hover.png"
+                        alt="Book Cover">
                 </div>
-                <p class="mt-5 text-sm font-medium uppercase lg:text-base font-inter">
+                <p class="mt-5 text-sm font-medium uppercase lg:text-base font-inter group-hover:text-primary">
                     Designing the Future: A Guide for Innovative Designers
                 </p>
                 <p class="mt-5 text-xs uppercase font-inter">
                     Emily Johnson
                 </p>
-                <p class="mt-5 text-xs lg:text-sm font-inter">
+                <p class="mt-5 text-xs lg:text-sm font-inter group-hover:text-gray-400">
                     Understanding the psychology of design to harnessing the power of emerging technologies like
                     artificial intelligence and virtual reality
                 </p>
                 <button
-                    class="flex items-center justify-center py-4 mt-8 text-base font-bold border border-black rounded-xl">
+                    class="flex items-center justify-center py-4 mt-8 text-base font-bold border border-black rounded-xl hover:border-none hover:bg-primary hover:text-white">
                     BUY NOW
                 </button>
             </div>
             <!-- End Book Item -->
         </div>
         <div class="flex justify-end text-base font-extrabold uppercase mt-14 font-inter">
-            <div>
-                See More
-                <div class="w-[29px] h-[2px] bg-black"></div>
+            <div class="group">
+                <span class="group-hover:text-secondary">See More</span>
+                <div
+                    class="group-hover:bg-secondary group-hover:w-[60px] w-[29px] h-[2px] bg-black transition-all ease-in-out duration-500">
+                </div>
             </div>
         </div>
     </section>
@@ -283,7 +331,8 @@
                     <img class="object-contain w-[80px]" src="./assets/quote.svg" alt="">
                 </div>
                 <div class="flex flex-col ml-3">
-                    <p class="max-w-sm pt-1 text-xs italic font-light lg:text-sm">Share a few compelling testimonials from readers
+                    <p class="max-w-sm pt-1 text-xs italic font-light lg:text-sm">Share a few compelling testimonials
+                        from readers
                         who have
                         enjoyed the recommended books.
                         Include their names and profile pictures.
